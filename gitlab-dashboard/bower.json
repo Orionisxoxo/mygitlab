@@ -1,0 +1,21 @@
+{
+  "name": "dashboard",
+  "authors": [
+    "User Test <user@example.com>"
+  ],
+  "description": "A ReactJS based Dashboard for myGITLAB",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "react": "^16.1.0"
+  }
+}

@@ -1,0 +1,51 @@
+swagger: "2.0"
+info:
+  title: myGITLAB Data Service
+  description: returns info about myGITLAB
+  license:
+    name: APLv2
+    url: https://www.apache.org/licenses/LICENSE-2.0.html
+  version: 0.1.0
+basePath: /api
+paths:
+    /projects/{user_id}/:
+      get:
+       operationId: getProjects
+       description: Get Projects
+       produces:
+       - application/json
+       parameters:
+          - name: user_id
+            in: path
+            description: ID of User
+            required: true
+            type: integer
+       responses:
+          '200':
+            description: List of projects
+    /add_projects:
+      post:
+        operationId: addProjects
+        description: Adds projects
+        produces:
+        - application/json
+        responses:
+          '200':
+            description: List of projects ids
+            schema:
+                type: array
+                items:
+                    type: integer
+    /users:
+      get:
+        operationId: getUsers
+        description: Returns a list of users
+        produces:
+        - application/json
+        responses:
+          '200':
+            description: List of users Ids
+            schema:
+                type: array
+                items:
+                    type: integer

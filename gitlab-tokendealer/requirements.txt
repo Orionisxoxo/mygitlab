@@ -1,0 +1,5 @@
+pyjwt
+flakon
+flask_webtest
+cryptography
+chaussette

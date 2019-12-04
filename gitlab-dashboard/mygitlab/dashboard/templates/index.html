@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <title>myGITLAB Dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>myGITLAB Dashboard</h1>
+      <br>
+      <div id="projects"></div>
+      <div id="groups"></div>
+      {% if not user %}
+      <a href="/gitlab_login">Log in via Gitlab</a>
+      {% else %}
+      Hi {{user}}!
+      <a href="/logout">Logout</a>
+      {% endif %}
+    </div>
+
+    <script src="../static/react/react.js"></script>
+    <script src="../static/react/react-dom.js"></script>
+    <script src="../static/dashboard.js"></script>
+
+  </body>
+</html>
